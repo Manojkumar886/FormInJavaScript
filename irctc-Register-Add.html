@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC-REG-ADDRESS</title>
+    <script src="../Form-in-JS/Validation.js"></script>
+    <style >
+        table
+        {
+            margin-top: 30px;
+            height: 300px;
+            width: 750px;
+            box-shadow: 10px 5px 10px rgba(14, 24, 11, 0.356);
+            padding: 10px;
+            word-spacing: 8px;
+            letter-spacing: 4px;
+        }
+        span
+        {
+            color: rgb(236, 10, 40);
+        }
+        </style>
+</head>
+<body>
+    <h2 style="text-align: center; color: rgb(12, 241, 31);">ADDRESS</h2>
+    <form name="irctc" onsubmit=" Active()" action="#">
+        <table align="center">
+            <tbody>
+            <tr>
+                <td><p><input type="text" name="fno" placeholder="Flat/Door/Block no."/><span id="Fdetails"></span></p></td>
+                <td><p><input type="text" name="Svalue" placeholder="Street/Lane"/><span id="Sdetails"></span></p></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="area" placeholder="Area/Locality"/><span id="Adetails"></span></td>
+                <td><input type="text" name="pin1" placeholder="Pin code"/><span id="pin"></span></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="state1" placeholder="State"/><span id="state"></span></td>
+                <td><select id="city" name="city">
+                    <option>Select city</option>
+                    <option>Namakkal</option>
+                    <option>Salem</option>
+                    <option>Chennai</option>
+                    <option>Erode</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><select id="post" name="post">
+                    <option>Select a post office</option>
+                </select></td>
+                <td> <input type="text" name="mob1" placeholder="Phone No"><span id="mob"></span></td>
+            </tr>
+            <tr> 
+                <td><span id="crt"></span>Copy Residence to <br>office Address<br>
+                    <input type="radio" name="crt1" value="Yes" />Yes
+                    <input type="radio" name="crt1" value="No"/>No
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="tacbox">
+                    <input type="checkbox" id="checkbox" name="condition" />
+                    <label for="checkbox">I agree to these<a href="#">Terms and Conditions</a></label>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input style="width: 150px;height: 40px;background-color:rgb(212, 41, 41);" type="reset" value="Cancel" /></td>
+                <td><input style="width: 150px;height: 40px;background-color: green;" type="submit" value="Register" /></td> 
+            </tr>
+        </tbody>
+        </table>
+    </form> 
+</body>
+</html>
